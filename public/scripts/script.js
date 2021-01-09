@@ -1,4 +1,3 @@
-<script>
 // Handle errors.
 let handleError = function(err){
   console.log("Error: ", err);
@@ -24,4 +23,10 @@ function removeVideoStream(elementId) {
   let remoteDiv = document.getElementById(elementId);
   if (remoteDiv) remoteDiv.parentNode.removeChild(remoteDiv);
 };
-</script>
+
+/*let client = AgoraRTC.createClient({
+    mode: "rtc",
+    codec: "vp8",
+});*/
+console.log(JSON.parse("<%= JSON.stringify(data.appId) %>"));
+// client.init(data.appId);
